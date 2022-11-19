@@ -3,6 +3,7 @@ package com.sizoryu.stareye.item;
 import com.sizoryu.stareye.StarEye;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -14,6 +15,7 @@ public class StarEyeModItems {
 
     public static final RegistryObject<Item> STAR_EYE = ITEMS.register("star_eye",
             () -> new Item(new Item.Properties()
+                    .rarity(Rarity.UNCOMMON)
                     .stacksTo(1)
                     .tab(CreativeModeTab.TAB_MISC)));
 
