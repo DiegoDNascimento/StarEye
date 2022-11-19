@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "SHS",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:nether_star"
+    },
+    "H": {
+      "item": "minecraft:dragon_head"
+    }
+  },
+  "result": {
+    "item": "stareye:star_eye"
+  }
+}
