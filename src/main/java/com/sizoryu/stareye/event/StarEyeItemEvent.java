@@ -10,9 +10,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.common.Mod;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 @Mod.EventBusSubscriber(modid = StarEye.MOD_ID)
 public class StarEyeItemEvent {
 
