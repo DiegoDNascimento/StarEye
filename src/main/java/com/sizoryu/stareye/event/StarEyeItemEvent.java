@@ -12,13 +12,12 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = StarEye.MOD_ID)
 public class StarEyeItemEvent {
-
-    private static int ticks = 0;
+    private static long last = System.currentTimeMillis();
     @SubscribeEvent
     public static void durabilityRegenEvent(TickEvent.PlayerTickEvent event) {
         if (event.side == LogicalSide.CLIENT) return;
 
-        if (++ticks >= 20 * 20) {
+        if (System.currentTimeMillis() - last >= 20000) {
             ServerPlayer player = (ServerPlayer) event.player;
             Inventory playerInventory = player.getInventory();
             if (playerInventory.contains(StarEyeModItems.STAR_EYE.get().getDefaultInstance())) {
@@ -27,7 +26,7 @@ public class StarEyeItemEvent {
                     stack.setDamageValue(Math.max(stack.getDamageValue() - 64, 0));
                 }
             }
-            ticks = 0;
+            last = System.currentTimeMillis();
         }
     }
 }

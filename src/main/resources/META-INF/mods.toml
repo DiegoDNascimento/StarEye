@@ -35,7 +35,7 @@ authors="Sizoryu" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 
-Adds an item that regenerates item durability over time.
+a simple mod that adds an item that regenerates durability over time.
 
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.

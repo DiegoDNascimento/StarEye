@@ -16,7 +16,7 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 
 
-version = '0.0.1-1.19.2'
+version = '0.0.2-1.19.2'
 group = 'com.sizoryu.stareye' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'stareye'
 
